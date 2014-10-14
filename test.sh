@@ -2,6 +2,6 @@
 set -x
 
 cd src
-for t in $(cat ../targets); do
+for t in $(grep -v '^#' ../targets); do
   $t
 done
