@@ -4,5 +4,8 @@ solutions = [
     "deps_file"   : "DEPS",
     "managed"     : False,
     "safesync_url": "",
+    "custom_deps": {
+      "src/third_party/android_tools": None,
+    },
   },
 ]
