@@ -2,4 +2,6 @@
 set -x
 
 cd src
-out/gn/mojo_system_unittests
+for t in $(cat ../targets); do
+  $t
+done
