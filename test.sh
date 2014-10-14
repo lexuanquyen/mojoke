@@ -3,5 +3,5 @@ set -x
 
 cd src
 for t in $(grep -v '^#' ../targets); do
-  $t
+  out/gn/$t
 done
